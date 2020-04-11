@@ -5,6 +5,10 @@
 [![AppVeyor](https://ci.appveyor.com/api/projects/status/x46lrnvdy29ysgqp?svg=true)](https://ci.appveyor.com/project/baldurk/renderdoc)
 [![Coverity Scan](https://scan.coverity.com/projects/8525/badge.svg)](https://scan.coverity.com/projects/baldurk-renderdoc)
 
+---
+<h2 align="center">This is a patched version of RenderDoc compatible with ODA WinGLES2 vectorizer</h2><p align="center"><a href="https://www.opendesign.com"><img src="https://www.opendesign.com/themes/oda/img/logo.png" /></a></p>
+
+---
 RenderDoc is a frame-capture based graphics debugger, currently available for Vulkan, D3D11, D3D12, OpenGL, and OpenGL ES development on Windows 7 - 10, Linux, Android, Stadia, and Nintendo Switch&trade;. It is completely open-source under the MIT license.
 
 If you have any questions, suggestions or problems or you can [create an issue](https://github.com/baldurk/renderdoc/issues/new) here on github, [email me directly](mailto:baldurk@baldurk.org) or come into [IRC](https://kiwiirc.com/client/irc.freenode.net/#renderdoc) or [Discord](https://discord.gg/ahq6yRB) to discuss it.
