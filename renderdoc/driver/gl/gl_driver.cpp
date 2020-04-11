@@ -383,6 +383,15 @@ void WrappedOpenGL::BuildGLExtensions()
 
   ************************************************************************/
 
+  // NOTE ODA GLES2 driver checks that those extensions are available when initializing, in order
+  // to detect that shaders are supported by the OpenGL implementation. Thus it does  not really
+  // use those extensions in an active way if shaders are supported 'natively' by the  OpenGL
+  // context (OpenGL 2.0+ context), it's pretty safe to add them to the supported extension list
+  // in order to be able to use RenderDoc with ODA.
+  m_GLExtensions.push_back("GL_ARB_fragment_shader");
+  m_GLExtensions.push_back("GL_ARB_vertex_shader");
+  m_GLExtensions.push_back("GL_ARB_shader_objects");
+
   // we'll be sorting the implementation extension array, so make sure the
   // sorts are identical so we can do the intersection easily
   std::sort(m_GLExtensions.begin(), m_GLExtensions.end());
